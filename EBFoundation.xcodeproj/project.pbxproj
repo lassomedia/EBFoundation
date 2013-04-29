@@ -40,7 +40,6 @@
 		5544D89117223F1800E6DBE1 /* libEBFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEBFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5544D8A21722403A00E6DBE1 /* NSTimer+EBBlockTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+EBBlockTimer.h"; sourceTree = "<group>"; };
 		5544D8A31722403A00E6DBE1 /* NSTimer+EBBlockTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EBBlockTimer.m"; sourceTree = "<group>"; };
-		5544D8A41722403A00E6DBE1 /* prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
 		5544D8A51722403A00E6DBE1 /* EBAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBAssert.h; sourceTree = "<group>"; };
 		5544D8A61722403A00E6DBE1 /* EBAssert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBAssert.m; sourceTree = "<group>"; };
 		5544D8A91722403A00E6DBE1 /* EBObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBObservation.h; sourceTree = "<group>"; };
@@ -117,7 +116,6 @@
 				5544D8AD1722403A00E6DBE1 /* EBTime.h */,
 				5544D8AE1722403A00E6DBE1 /* EBTime.m */,
 				5544D8AF1722403A00E6DBE1 /* EBUtilities.h */,
-				5544D8A41722403A00E6DBE1 /* prefix.pch */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -261,8 +259,6 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Code/prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -295,8 +291,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Code/prefix.pch;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
