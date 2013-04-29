@@ -72,6 +72,11 @@
     __value >= __min && __value <  __max;             \
 })
 
+/* Return the min/max possible values for signed and unsigned types or variables. */
+#define EBMinSignedVal(type)    (-((intmax_t)1 << ((sizeof(type) * 8) - 1)))
+#define EBMaxSignedVal(type)    (((((intmax_t)1 << ((sizeof(type) * 8) - 2)) - 1) * 2) + 1)
+#define EBMaxUnsignedVal(type)  (((((uintmax_t)1 << ((sizeof(type) * 8) - 1)) - 1) * 2) + 1)
+
 #if __has_feature(objc_arc)
 
     #define EBSetTimer(oldTimer, newTimer)                 \
