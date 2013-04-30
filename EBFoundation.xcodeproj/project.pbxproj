@@ -11,8 +11,6 @@
 		5544D8B21722403A00E6DBE1 /* NSTimer+EBBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544D8A31722403A00E6DBE1 /* NSTimer+EBBlockTimer.m */; };
 		5544D8B51722403A00E6DBE1 /* EBAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544D8A61722403A00E6DBE1 /* EBAssert.m */; };
 		5544D8B61722403A00E6DBE1 /* EBAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544D8A61722403A00E6DBE1 /* EBAssert.m */; };
-		5544D8BB1722403A00E6DBE1 /* EBObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544D8AA1722403A00E6DBE1 /* EBObservation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5544D8BC1722403A00E6DBE1 /* EBObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544D8AA1722403A00E6DBE1 /* EBObservation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5544D8BE1722403A00E6DBE1 /* EBSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544D8AC1722403A00E6DBE1 /* EBSingleton.m */; };
 		5544D8BF1722403A00E6DBE1 /* EBSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544D8AC1722403A00E6DBE1 /* EBSingleton.m */; };
 		5544D8C11722403A00E6DBE1 /* EBTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544D8AE1722403A00E6DBE1 /* EBTime.m */; };
@@ -23,13 +21,11 @@
 		55AD304417227D3600347630 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AD304317227D3600347630 /* Foundation.framework */; };
 		55AD312C1722822600347630 /* NSTimer+EBBlockTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5544D8A21722403A00E6DBE1 /* NSTimer+EBBlockTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55AD312D1722822900347630 /* EBAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 5544D8A51722403A00E6DBE1 /* EBAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55AD312E1722822A00347630 /* EBObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5544D8A91722403A00E6DBE1 /* EBObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55AD312F1722822C00347630 /* EBSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 5544D8AB1722403A00E6DBE1 /* EBSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55AD31301722822E00347630 /* EBTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 5544D8AD1722403A00E6DBE1 /* EBTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55AD31311722823000347630 /* EBUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5544D8AF1722403A00E6DBE1 /* EBUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55AD31321722824D00347630 /* NSTimer+EBBlockTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5544D8A21722403A00E6DBE1 /* NSTimer+EBBlockTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55AD31331722824D00347630 /* EBAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 5544D8A51722403A00E6DBE1 /* EBAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55AD31341722824D00347630 /* EBObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5544D8A91722403A00E6DBE1 /* EBObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55AD31351722824D00347630 /* EBSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 5544D8AB1722403A00E6DBE1 /* EBSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55AD31361722824D00347630 /* EBTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 5544D8AD1722403A00E6DBE1 /* EBTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55AD31371722824D00347630 /* EBUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5544D8AF1722403A00E6DBE1 /* EBUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,8 +38,6 @@
 		5544D8A31722403A00E6DBE1 /* NSTimer+EBBlockTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EBBlockTimer.m"; sourceTree = "<group>"; };
 		5544D8A51722403A00E6DBE1 /* EBAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBAssert.h; sourceTree = "<group>"; };
 		5544D8A61722403A00E6DBE1 /* EBAssert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBAssert.m; sourceTree = "<group>"; };
-		5544D8A91722403A00E6DBE1 /* EBObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBObservation.h; sourceTree = "<group>"; };
-		5544D8AA1722403A00E6DBE1 /* EBObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBObservation.m; sourceTree = "<group>"; };
 		5544D8AB1722403A00E6DBE1 /* EBSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBSingleton.h; sourceTree = "<group>"; };
 		5544D8AC1722403A00E6DBE1 /* EBSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBSingleton.m; sourceTree = "<group>"; };
 		5544D8AD1722403A00E6DBE1 /* EBTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBTime.h; sourceTree = "<group>"; };
@@ -109,8 +103,6 @@
 				5544D8A31722403A00E6DBE1 /* NSTimer+EBBlockTimer.m */,
 				5544D8A51722403A00E6DBE1 /* EBAssert.h */,
 				5544D8A61722403A00E6DBE1 /* EBAssert.m */,
-				5544D8A91722403A00E6DBE1 /* EBObservation.h */,
-				5544D8AA1722403A00E6DBE1 /* EBObservation.m */,
 				5544D8AB1722403A00E6DBE1 /* EBSingleton.h */,
 				5544D8AC1722403A00E6DBE1 /* EBSingleton.m */,
 				5544D8AD1722403A00E6DBE1 /* EBTime.h */,
@@ -130,7 +122,6 @@
 				5544D8D017224A7100E6DBE1 /* EBFoundation.h in Headers */,
 				55AD312C1722822600347630 /* NSTimer+EBBlockTimer.h in Headers */,
 				55AD312D1722822900347630 /* EBAssert.h in Headers */,
-				55AD312E1722822A00347630 /* EBObservation.h in Headers */,
 				55AD312F1722822C00347630 /* EBSingleton.h in Headers */,
 				55AD31301722822E00347630 /* EBTime.h in Headers */,
 				55AD31311722823000347630 /* EBUtilities.h in Headers */,
@@ -144,7 +135,6 @@
 				5544D8D217224A8400E6DBE1 /* EBFoundation.h in Headers */,
 				55AD31321722824D00347630 /* NSTimer+EBBlockTimer.h in Headers */,
 				55AD31331722824D00347630 /* EBAssert.h in Headers */,
-				55AD31341722824D00347630 /* EBObservation.h in Headers */,
 				55AD31351722824D00347630 /* EBSingleton.h in Headers */,
 				55AD31361722824D00347630 /* EBTime.h in Headers */,
 				55AD31371722824D00347630 /* EBUtilities.h in Headers */,
@@ -222,7 +212,6 @@
 			files = (
 				5544D8B11722403A00E6DBE1 /* NSTimer+EBBlockTimer.m in Sources */,
 				5544D8B51722403A00E6DBE1 /* EBAssert.m in Sources */,
-				5544D8BB1722403A00E6DBE1 /* EBObservation.m in Sources */,
 				5544D8BE1722403A00E6DBE1 /* EBSingleton.m in Sources */,
 				5544D8C11722403A00E6DBE1 /* EBTime.m in Sources */,
 			);
@@ -234,7 +223,6 @@
 			files = (
 				5544D8B21722403A00E6DBE1 /* NSTimer+EBBlockTimer.m in Sources */,
 				5544D8B61722403A00E6DBE1 /* EBAssert.m in Sources */,
-				5544D8BC1722403A00E6DBE1 /* EBObservation.m in Sources */,
 				5544D8BF1722403A00E6DBE1 /* EBSingleton.m in Sources */,
 				5544D8C21722403A00E6DBE1 /* EBTime.m in Sources */,
 			);
