@@ -27,8 +27,6 @@ An NSTimer category for executing a block instead of a method.
 
 ## Integration
 
-1. Integrate [EBFoundation](https://github.com/davekeck/EBFoundation) into your project.
-2. Integrate [EBConcurrentQueue](https://github.com/davekeck/EBConcurrentQueue) into your project.
-3. Integrate [EBDiskCache](https://github.com/davekeck/EBDiskCache) into your project.
-4. Link against libcurl.
-5. Add the source files to your project.
+1. Drag the EBFoundation Xcode project into your project hierarchy
+2. Add the appropriate dependency from the EBFoundation project: EBFoundation-osx for OS X, or EBFoundation-ios for iOS
+3. Link against libEBFoundation
