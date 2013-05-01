@@ -6,7 +6,7 @@ EBAssert contains various flavors of assertion macros that allow clients to prin
 
 ## EBSingleton
 
-EBSingleton is an abstract class implementing singleton behavior. Subclasses implement initialization in `-initSingleton`, and clients retrieve the singleton instance via `-sharedInstance`.
+EBSingleton is an abstract class that implements singleton behavior. Subclasses implement their initialization by overriding `-initSingleton`, and clients retrieve the singleton instance via `-sharedInstance`.
 
 ## EBTime
 
@@ -14,11 +14,11 @@ EBTime contains a simple set of functions for measuring the difference between t
 
 ## EBUtilities
 
-A set of generally-useful macros.
+A set of generally-useful functions and macros.
 
 ## NSTimer+EBBlockTimer
 
-An NSTimer category for executing a block instead of a method.
+An NSTimer category allowing a block to be executed instead of a method.
 
 ## Requirements
 

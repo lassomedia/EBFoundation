@@ -77,34 +77,4 @@
 #define EBMaxSignedVal(type)    (((((intmax_t)1 << ((sizeof(type) * 8) - 2)) - 1) * 2) + 1)
 #define EBMaxUnsignedVal(type)  (((((uintmax_t)1 << ((sizeof(type) * 8) - 1)) - 1) * 2) + 1)
 
-#if __has_feature(objc_arc)
-
-    #define EBSetTimer(oldTimer, newTimer)                 \
-    ({                                                     \
-        __typeof__(oldTimer) __oldTimer = (oldTimer);      \
-        NSTimer *__newTimer = (newTimer);                  \
-                                                           \
-        if (*__oldTimer != __newTimer)                     \
-        {                                                  \
-            [*__oldTimer invalidate];                      \
-            *__oldTimer = __newTimer;                      \
-        }                                                  \
-    })
-
-#else
-
-    #define EBSetTimer(oldTimer, newTimer)                 \
-    ({                                                     \
-        __typeof__(oldTimer) __oldTimer = (oldTimer);      \
-        NSTimer *__newTimer = (newTimer);                  \
-                                                           \
-        if (*__oldTimer != __newTimer)                     \
-        {                                                  \
-            [__newTimer retain];                           \
-            [*__oldTimer invalidate];                      \
-            [*__oldTimer release];                         \
-            *__oldTimer = __newTimer;                      \
-        }                                                  \
-    })
-
-#endif
+void EBSetTimer(NSTimer **oldTimer, NSTimer *newTimer);
