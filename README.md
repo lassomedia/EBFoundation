@@ -2,7 +2,7 @@ This repository includes various generally-useful classes and utilities, describ
 
 ## EBAssert
 
-EBAssert contains various flavors of assertion macros that allow clients to print detailed assertion information (such as file name, line number, and the asserted expression), handle assertion failures, and raise exceptions.
+EBAssert contains various flavors of assertion macros that allow clients to print detailed assertion information (such as file name, line number, and asserted expression), handle assertion failures, and raise exceptions.
 
 ## EBSingleton
 
