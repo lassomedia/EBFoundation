@@ -27,6 +27,8 @@ An NSTimer category allowing a block to be executed instead of a method.
 
 ## Integration
 
-1. Drag the EBFoundation Xcode project into your project hierarchy
-2. Add the appropriate dependency from the EBFoundation project: EBFoundation-osx for OS X, or EBFoundation-ios for iOS
-3. Link against libEBFoundation
+1. Drag EBFoundation.xcodeproj into your project's file hierarchy.
+2. In your target's "Build Phases" tab:
+    * Add EBFoundation as a dependency ("Target Dependencies" section)
+    * Link against EBFoundation ("Link Binary With Libraries" section)
+3. Add `#import <EchoBravo/EBFoundation.h>` to your source files.

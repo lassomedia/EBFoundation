@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		555E5DB8176402CA007FC19F /* EBFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995AA11763FEDB0017F41E /* EBFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		555E5DB9176402CA007FC19F /* EBAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995A9F1763FEDB0017F41E /* EBAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		555E5DBA176402CA007FC19F /* EBSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995AA21763FEDB0017F41E /* EBSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		555E5DBB176402CA007FC19F /* EBTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995AA41763FEDB0017F41E /* EBTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		555E5DBC176402CA007FC19F /* EBUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995AA61763FEDB0017F41E /* EBUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		555E5DBD176402CA007FC19F /* NSTimer+EBBlockTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995AA81763FEDB0017F41E /* NSTimer+EBBlockTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55995AAB1763FEDB0017F41E /* EBAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995A9F1763FEDB0017F41E /* EBAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55995AAC1763FEDB0017F41E /* EBAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = 55995AA01763FEDB0017F41E /* EBAssert.m */; };
+		55995AAD1763FEDB0017F41E /* EBAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = 55995AA01763FEDB0017F41E /* EBAssert.m */; };
+		55995AAE1763FEDB0017F41E /* EBFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995AA11763FEDB0017F41E /* EBFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55995AAF1763FEDB0017F41E /* EBSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995AA21763FEDB0017F41E /* EBSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55995AB01763FEDB0017F41E /* EBSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 55995AA31763FEDB0017F41E /* EBSingleton.m */; };
+		55995AB11763FEDB0017F41E /* EBSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 55995AA31763FEDB0017F41E /* EBSingleton.m */; };
+		55995AB21763FEDB0017F41E /* EBTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995AA41763FEDB0017F41E /* EBTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55995AB31763FEDB0017F41E /* EBTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 55995AA51763FEDB0017F41E /* EBTime.m */; };
+		55995AB41763FEDB0017F41E /* EBTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 55995AA51763FEDB0017F41E /* EBTime.m */; };
+		55995AB51763FEDB0017F41E /* EBUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995AA61763FEDB0017F41E /* EBUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55995AB61763FEDB0017F41E /* EBUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 55995AA71763FEDB0017F41E /* EBUtilities.m */; };
+		55995AB71763FEDB0017F41E /* EBUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 55995AA71763FEDB0017F41E /* EBUtilities.m */; };
+		55995AB81763FEDB0017F41E /* NSTimer+EBBlockTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995AA81763FEDB0017F41E /* NSTimer+EBBlockTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55995AB91763FEDB0017F41E /* NSTimer+EBBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55995AA91763FEDB0017F41E /* NSTimer+EBBlockTimer.m */; };
+		55995ABA1763FEDB0017F41E /* NSTimer+EBBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55995AA91763FEDB0017F41E /* NSTimer+EBBlockTimer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55995A7C1763FEB10017F41E /* libEBFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEBFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		55995A921763FEB90017F41E /* libEBFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEBFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		55995A9F1763FEDB0017F41E /* EBAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBAssert.h; sourceTree = "<group>"; };
+		55995AA01763FEDB0017F41E /* EBAssert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBAssert.m; sourceTree = "<group>"; };
+		55995AA11763FEDB0017F41E /* EBFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBFoundation.h; sourceTree = "<group>"; };
+		55995AA21763FEDB0017F41E /* EBSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBSingleton.h; sourceTree = "<group>"; };
+		55995AA31763FEDB0017F41E /* EBSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBSingleton.m; sourceTree = "<group>"; };
+		55995AA41763FEDB0017F41E /* EBTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBTime.h; sourceTree = "<group>"; };
+		55995AA51763FEDB0017F41E /* EBTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBTime.m; sourceTree = "<group>"; };
+		55995AA61763FEDB0017F41E /* EBUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBUtilities.h; sourceTree = "<group>"; };
+		55995AA71763FEDB0017F41E /* EBUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBUtilities.m; sourceTree = "<group>"; };
+		55995AA81763FEDB0017F41E /* NSTimer+EBBlockTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+EBBlockTimer.h"; sourceTree = "<group>"; };
+		55995AA91763FEDB0017F41E /* NSTimer+EBBlockTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EBBlockTimer.m"; sourceTree = "<group>"; };
+		55995ABB1763FEE40017F41E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55995A791763FEB10017F41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55995A8F1763FEB90017F41E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55995A711763FE8E0017F41E = {
+			isa = PBXGroup;
+			children = (
+				55995ABB1763FEE40017F41E /* README.md */,
+				55995ABC1763FEE80017F41E /* Source */,
+				55995A7D1763FEB10017F41E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55995A7D1763FEB10017F41E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55995A7C1763FEB10017F41E /* libEBFoundation.a */,
+				55995A921763FEB90017F41E /* libEBFoundation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55995ABC1763FEE80017F41E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				55995AA11763FEDB0017F41E /* EBFoundation.h */,
+				55995A9F1763FEDB0017F41E /* EBAssert.h */,
+				55995AA01763FEDB0017F41E /* EBAssert.m */,
+				55995AA21763FEDB0017F41E /* EBSingleton.h */,
+				55995AA31763FEDB0017F41E /* EBSingleton.m */,
+				55995AA41763FEDB0017F41E /* EBTime.h */,
+				55995AA51763FEDB0017F41E /* EBTime.m */,
+				55995AA61763FEDB0017F41E /* EBUtilities.h */,
+				55995AA71763FEDB0017F41E /* EBUtilities.m */,
+				55995AA81763FEDB0017F41E /* NSTimer+EBBlockTimer.h */,
+				55995AA91763FEDB0017F41E /* NSTimer+EBBlockTimer.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		555E5DB7176402C1007FC19F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				555E5DB9176402CA007FC19F /* EBAssert.h in Headers */,
+				555E5DB8176402CA007FC19F /* EBFoundation.h in Headers */,
+				555E5DBA176402CA007FC19F /* EBSingleton.h in Headers */,
+				555E5DBB176402CA007FC19F /* EBTime.h in Headers */,
+				555E5DBC176402CA007FC19F /* EBUtilities.h in Headers */,
+				555E5DBD176402CA007FC19F /* NSTimer+EBBlockTimer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55995A7A1763FEB10017F41E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55995AAB1763FEDB0017F41E /* EBAssert.h in Headers */,
+				55995AAE1763FEDB0017F41E /* EBFoundation.h in Headers */,
+				55995AAF1763FEDB0017F41E /* EBSingleton.h in Headers */,
+				55995AB21763FEDB0017F41E /* EBTime.h in Headers */,
+				55995AB51763FEDB0017F41E /* EBUtilities.h in Headers */,
+				55995AB81763FEDB0017F41E /* NSTimer+EBBlockTimer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		55995A7B1763FEB10017F41E /* Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55995A8D1763FEB10017F41E /* Build configuration list for PBXNativeTarget "Mac" */;
+			buildPhases = (
+				55995A781763FEB10017F41E /* Sources */,
+				55995A791763FEB10017F41E /* Frameworks */,
+				55995A7A1763FEB10017F41E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mac;
+			productName = Mac;
+			productReference = 55995A7C1763FEB10017F41E /* libEBFoundation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		55995A911763FEB90017F41E /* iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55995A9C1763FEB90017F41E /* Build configuration list for PBXNativeTarget "iOS" */;
+			buildPhases = (
+				55995A8E1763FEB90017F41E /* Sources */,
+				55995A8F1763FEB90017F41E /* Frameworks */,
+				555E5DB7176402C1007FC19F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOS;
+			productName = iOS;
+			productReference = 55995A921763FEB90017F41E /* libEBFoundation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55995A721763FE8E0017F41E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 55995A751763FE8E0017F41E /* Build configuration list for PBXProject "EBFoundation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 55995A711763FE8E0017F41E;
+			productRefGroup = 55995A7D1763FEB10017F41E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55995A7B1763FEB10017F41E /* Mac */,
+				55995A911763FEB90017F41E /* iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55995A781763FEB10017F41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55995AAC1763FEDB0017F41E /* EBAssert.m in Sources */,
+				55995AB01763FEDB0017F41E /* EBSingleton.m in Sources */,
+				55995AB31763FEDB0017F41E /* EBTime.m in Sources */,
+				55995AB61763FEDB0017F41E /* EBUtilities.m in Sources */,
+				55995AB91763FEDB0017F41E /* NSTimer+EBBlockTimer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55995A8E1763FEB90017F41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55995AAD1763FEDB0017F41E /* EBAssert.m in Sources */,
+				55995AB11763FEDB0017F41E /* EBSingleton.m in Sources */,
+				55995AB41763FEDB0017F41E /* EBTime.m in Sources */,
+				55995AB71763FEDB0017F41E /* EBUtilities.m in Sources */,
+				55995ABA1763FEDB0017F41E /* NSTimer+EBBlockTimer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		55995A761763FE8E0017F41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include/EchoBravo;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		55995A771763FE8E0017F41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include/EchoBravo;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55995A8B1763FEB10017F41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		55995A8C1763FEB10017F41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		55995A9D1763FEB90017F41E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55995A9E1763FEB90017F41E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55995A751763FE8E0017F41E /* Build configuration list for PBXProject "EBFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55995A761763FE8E0017F41E /* Debug */,
+				55995A771763FE8E0017F41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55995A8D1763FEB10017F41E /* Build configuration list for PBXNativeTarget "Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55995A8B1763FEB10017F41E /* Debug */,
+				55995A8C1763FEB10017F41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55995A9C1763FEB90017F41E /* Build configuration list for PBXNativeTarget "iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55995A9D1763FEB90017F41E /* Debug */,
+				55995A9E1763FEB90017F41E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55995A721763FE8E0017F41E /* Project object */;
+}
