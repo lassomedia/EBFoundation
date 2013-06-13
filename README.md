@@ -1,4 +1,4 @@
-This repository includes various generally-useful classes and utilities, described below.
+EBFoundation is a framework that includes various generally-useful classes and utilities, described below.
 
 ## EBAssert
 
