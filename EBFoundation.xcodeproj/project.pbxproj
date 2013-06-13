@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550F7952176A701A006C95BF /* EBObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 550F7950176A701A006C95BF /* EBObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		550F7953176A701A006C95BF /* EBObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 550F7950176A701A006C95BF /* EBObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		550F7954176A701A006C95BF /* EBObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 550F7951176A701A006C95BF /* EBObservation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		550F7955176A701A006C95BF /* EBObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 550F7951176A701A006C95BF /* EBObservation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		555E5DB8176402CA007FC19F /* EBFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995AA11763FEDB0017F41E /* EBFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		555E5DB9176402CA007FC19F /* EBAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995A9F1763FEDB0017F41E /* EBAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		555E5DBA176402CA007FC19F /* EBSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995AA21763FEDB0017F41E /* EBSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		550F7950176A701A006C95BF /* EBObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBObservation.h; sourceTree = "<group>"; };
+		550F7951176A701A006C95BF /* EBObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBObservation.m; sourceTree = "<group>"; };
 		55995A7C1763FEB10017F41E /* libEBFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEBFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		55995A921763FEB90017F41E /* libEBFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEBFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		55995A9F1763FEDB0017F41E /* EBAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBAssert.h; sourceTree = "<group>"; };
@@ -90,6 +96,8 @@
 				55995AA11763FEDB0017F41E /* EBFoundation.h */,
 				55995A9F1763FEDB0017F41E /* EBAssert.h */,
 				55995AA01763FEDB0017F41E /* EBAssert.m */,
+				550F7950176A701A006C95BF /* EBObservation.h */,
+				550F7951176A701A006C95BF /* EBObservation.m */,
 				55995AA21763FEDB0017F41E /* EBSingleton.h */,
 				55995AA31763FEDB0017F41E /* EBSingleton.m */,
 				55995AA41763FEDB0017F41E /* EBTime.h */,
@@ -109,8 +117,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				555E5DB9176402CA007FC19F /* EBAssert.h in Headers */,
 				555E5DB8176402CA007FC19F /* EBFoundation.h in Headers */,
+				555E5DB9176402CA007FC19F /* EBAssert.h in Headers */,
+				550F7953176A701A006C95BF /* EBObservation.h in Headers */,
 				555E5DBA176402CA007FC19F /* EBSingleton.h in Headers */,
 				555E5DBB176402CA007FC19F /* EBTime.h in Headers */,
 				555E5DBC176402CA007FC19F /* EBUtilities.h in Headers */,
@@ -122,8 +131,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55995AAB1763FEDB0017F41E /* EBAssert.h in Headers */,
 				55995AAE1763FEDB0017F41E /* EBFoundation.h in Headers */,
+				55995AAB1763FEDB0017F41E /* EBAssert.h in Headers */,
+				550F7952176A701A006C95BF /* EBObservation.h in Headers */,
 				55995AAF1763FEDB0017F41E /* EBSingleton.h in Headers */,
 				55995AB21763FEDB0017F41E /* EBTime.h in Headers */,
 				55995AB51763FEDB0017F41E /* EBUtilities.h in Headers */,
@@ -200,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55995AAC1763FEDB0017F41E /* EBAssert.m in Sources */,
+				550F7954176A701A006C95BF /* EBObservation.m in Sources */,
 				55995AB01763FEDB0017F41E /* EBSingleton.m in Sources */,
 				55995AB31763FEDB0017F41E /* EBTime.m in Sources */,
 				55995AB61763FEDB0017F41E /* EBUtilities.m in Sources */,
@@ -212,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55995AAD1763FEDB0017F41E /* EBAssert.m in Sources */,
+				550F7955176A701A006C95BF /* EBObservation.m in Sources */,
 				55995AB11763FEDB0017F41E /* EBSingleton.m in Sources */,
 				55995AB41763FEDB0017F41E /* EBTime.m in Sources */,
 				55995AB71763FEDB0017F41E /* EBUtilities.m in Sources */,
@@ -254,7 +266,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(PROJECT_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = include/EchoBravo;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -284,7 +296,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(PROJECT_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = include/EchoBravo;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};

@@ -1,5 +1,6 @@
-#import <EchoBravo/EBAssert.h>
-#import <EchoBravo/EBSingleton.h>
-#import <EchoBravo/EBTime.h>
-#import <EchoBravo/EBUtilities.h>
-#import <EchoBravo/NSTimer+EBBlockTimer.h>
+#import <EBFoundation/EBAssert.h>
+#import <EBFoundation/EBObservation.h>
+#import <EBFoundation/EBSingleton.h>
+#import <EBFoundation/EBTime.h>
+#import <EBFoundation/EBUtilities.h>
+#import <EBFoundation/NSTimer+EBBlockTimer.h>
