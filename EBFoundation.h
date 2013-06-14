@@ -1,4 +1,5 @@
 #import <EBFoundation/EBAssert.h>
+#import <EBFoundation/EBBlockValueTransformer.h>
 #import <EBFoundation/EBObservation.h>
 #import <EBFoundation/EBSingleton.h>
 #import <EBFoundation/EBTime.h>

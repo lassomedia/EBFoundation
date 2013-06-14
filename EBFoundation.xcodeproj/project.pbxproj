@@ -33,6 +33,10 @@
 		55995AB81763FEDB0017F41E /* NSTimer+EBBlockTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 55995AA81763FEDB0017F41E /* NSTimer+EBBlockTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55995AB91763FEDB0017F41E /* NSTimer+EBBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55995AA91763FEDB0017F41E /* NSTimer+EBBlockTimer.m */; };
 		55995ABA1763FEDB0017F41E /* NSTimer+EBBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55995AA91763FEDB0017F41E /* NSTimer+EBBlockTimer.m */; };
+		55B87114176AAB4E00E22CF3 /* EBBlockValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 55B87112176AAB4E00E22CF3 /* EBBlockValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55B87115176AAB4E00E22CF3 /* EBBlockValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 55B87112176AAB4E00E22CF3 /* EBBlockValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55B87116176AAB4E00E22CF3 /* EBBlockValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B87113176AAB4E00E22CF3 /* EBBlockValueTransformer.m */; };
+		55B87117176AAB4E00E22CF3 /* EBBlockValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B87113176AAB4E00E22CF3 /* EBBlockValueTransformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,8 @@
 		55995AA81763FEDB0017F41E /* NSTimer+EBBlockTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+EBBlockTimer.h"; sourceTree = "<group>"; };
 		55995AA91763FEDB0017F41E /* NSTimer+EBBlockTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EBBlockTimer.m"; sourceTree = "<group>"; };
 		55995ABB1763FEE40017F41E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		55B87112176AAB4E00E22CF3 /* EBBlockValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBBlockValueTransformer.h; sourceTree = "<group>"; };
+		55B87113176AAB4E00E22CF3 /* EBBlockValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBBlockValueTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,8 @@
 				55995AA11763FEDB0017F41E /* EBFoundation.h */,
 				55995A9F1763FEDB0017F41E /* EBAssert.h */,
 				55995AA01763FEDB0017F41E /* EBAssert.m */,
+				55B87112176AAB4E00E22CF3 /* EBBlockValueTransformer.h */,
+				55B87113176AAB4E00E22CF3 /* EBBlockValueTransformer.m */,
 				550F7950176A701A006C95BF /* EBObservation.h */,
 				550F7951176A701A006C95BF /* EBObservation.m */,
 				55995AA21763FEDB0017F41E /* EBSingleton.h */,
@@ -119,6 +127,7 @@
 			files = (
 				555E5DB8176402CA007FC19F /* EBFoundation.h in Headers */,
 				555E5DB9176402CA007FC19F /* EBAssert.h in Headers */,
+				55B87115176AAB4E00E22CF3 /* EBBlockValueTransformer.h in Headers */,
 				550F7953176A701A006C95BF /* EBObservation.h in Headers */,
 				555E5DBA176402CA007FC19F /* EBSingleton.h in Headers */,
 				555E5DBB176402CA007FC19F /* EBTime.h in Headers */,
@@ -133,6 +142,7 @@
 			files = (
 				55995AAE1763FEDB0017F41E /* EBFoundation.h in Headers */,
 				55995AAB1763FEDB0017F41E /* EBAssert.h in Headers */,
+				55B87114176AAB4E00E22CF3 /* EBBlockValueTransformer.h in Headers */,
 				550F7952176A701A006C95BF /* EBObservation.h in Headers */,
 				55995AAF1763FEDB0017F41E /* EBSingleton.h in Headers */,
 				55995AB21763FEDB0017F41E /* EBTime.h in Headers */,
@@ -215,6 +225,7 @@
 				55995AB31763FEDB0017F41E /* EBTime.m in Sources */,
 				55995AB61763FEDB0017F41E /* EBUtilities.m in Sources */,
 				55995AB91763FEDB0017F41E /* NSTimer+EBBlockTimer.m in Sources */,
+				55B87116176AAB4E00E22CF3 /* EBBlockValueTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +239,7 @@
 				55995AB41763FEDB0017F41E /* EBTime.m in Sources */,
 				55995AB71763FEDB0017F41E /* EBUtilities.m in Sources */,
 				55995ABA1763FEDB0017F41E /* NSTimer+EBBlockTimer.m in Sources */,
+				55B87117176AAB4E00E22CF3 /* EBBlockValueTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

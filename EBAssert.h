@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import <EBFoundation/EBUtilities.h>
 
 #define EBAssertOrRecover(condition, recoveryAction)                                                                                                                                  \
 ({                                                                                                                                                                                    \
