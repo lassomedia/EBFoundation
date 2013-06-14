@@ -10,7 +10,7 @@
 #import "EBUtilities.h"
 
 static SEL kObserveeSwizzledDeallocSelector = nil;
-static EBUniquePointerConst(kObservationsMapKey);
+static EBMakeUniquePointerConst(kObservationsMapKey);
 static NSLock *gMasterLock = nil;
 
 @implementation EBObservation

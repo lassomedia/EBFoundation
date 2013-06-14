@@ -9,12 +9,15 @@
 #define EBFinish EBFinish
 
 #define EBStringify(a) #a
-#define EBStringConstExtern(constantName) extern NSString *const constantName;
-#define EBStringConst(constantName) NSString *const constantName = @EBStringify(constantName)
-#define EBUniquePointerConst(constantName) const void *const constantName = (const void *const)&constantName
 #define EBStaticArrayCount(array) (sizeof(array) / sizeof(*array))
 #define EBEqualBools(a, b) ((bool)(a) == (bool)(b))
 #define EBRaise(message, ...) [NSException raise: NSGenericException format: (message), ##__VA_ARGS__]
+
+#define EBMakeStringConstExtern(constantName) extern NSString *const constantName;
+#define EBMakeStringConst(constantName) NSString *const constantName = @EBStringify(constantName)
+#define EBMakeUniquePointerConst(constantName) const void *const constantName = (const void *const)&constantName
+#define EBMakeWeakSelf() __weak __typeof__(self) weakSelf = self
+#define EBMakeStrongSelf() __typeof__(self) strongSelf = weakSelf
 
 #define EBConfirmOrPerform(condition, action)      \
 ({                                                 \
@@ -77,4 +80,34 @@
 #define EBMaxSignedVal(type)    (((((intmax_t)1 << ((sizeof(type) * 8) - 2)) - 1) * 2) + 1)
 #define EBMaxUnsignedVal(type)  (((((uintmax_t)1 << ((sizeof(type) * 8) - 1)) - 1) * 2) + 1)
 
-void EBSetTimer(NSTimer **oldTimer, NSTimer *newTimer);
+#if __has_feature(objc_arc)
+
+    #define EBSetTimer(oldTimer, newTimer)                 \
+    ({                                                     \
+        __typeof__(oldTimer) __oldTimer = (oldTimer);      \
+        NSTimer *__newTimer = (newTimer);                  \
+                                                           \
+        if (*__oldTimer != __newTimer)                     \
+        {                                                  \
+            [*__oldTimer invalidate];                      \
+            *__oldTimer = __newTimer;                      \
+        }                                                  \
+    })
+
+#else
+
+    #define EBSetTimer(oldTimer, newTimer)                 \
+    ({                                                     \
+        __typeof__(oldTimer) __oldTimer = (oldTimer);      \
+        NSTimer *__newTimer = (newTimer);                  \
+                                                           \
+        if (*__oldTimer != __newTimer)                     \
+        {                                                  \
+            [__newTimer retain];                           \
+            [*__oldTimer invalidate];                      \
+            [*__oldTimer release];                         \
+            *__oldTimer = __newTimer;                      \
+        }                                                  \
+    })
+
+#endif
