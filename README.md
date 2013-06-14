@@ -33,5 +33,5 @@ An NSTimer category allowing a block to be executed instead of a method.
 1. Drag EBFoundation.xcodeproj into your project's file hierarchy.
 2. In your target's "Build Phases" tab:
     * Add EBFoundation as a dependency ("Target Dependencies" section)
-    * Link against EBFoundation ("Link Binary With Libraries" section)
+    * Link against libEBFoundation.a ("Link Binary With Libraries" section)
 3. Add `#import <EBFoundation/EBFoundation.h>` to your source files.
