@@ -158,6 +158,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55995A8D1763FEB10017F41E /* Build configuration list for PBXNativeTarget "Mac" */;
 			buildPhases = (
+				55612C6C176D525400F85CE4 /* Create symbolic link to 'include' directory (necessary for Archive builds) */,
 				55995A781763FEB10017F41E /* Sources */,
 				55995A791763FEB10017F41E /* Frameworks */,
 				55995A7A1763FEB10017F41E /* Headers */,
@@ -175,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55995A9C1763FEB90017F41E /* Build configuration list for PBXNativeTarget "iOS" */;
 			buildPhases = (
+				55B61C26176E3D7500598DFC /* Create symbolic link to 'include' directory (necessary for Archive builds) */,
 				55995A8E1763FEB90017F41E /* Sources */,
 				55995A8F1763FEB90017F41E /* Frameworks */,
 				555E5DB7176402C1007FC19F /* Headers */,
@@ -213,6 +215,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55612C6C176D525400F85CE4 /* Create symbolic link to 'include' directory (necessary for Archive builds) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create symbolic link to 'include' directory (necessary for Archive builds)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This is necessary for Archive builds, since Xcode doesn't make a symbolic link to the 'includes' directory when Archiving. Without this, Archive builds fail because the headers can't be found.\nln -s \"$OBJROOT/UninstalledProducts/include\" \"$BUILT_PRODUCTS_DIR/include\" > /dev/null 2>&1\nexit 0";
+		};
+		55B61C26176E3D7500598DFC /* Create symbolic link to 'include' directory (necessary for Archive builds) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create symbolic link to 'include' directory (necessary for Archive builds)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This is necessary for Archive builds, since Xcode doesn't make a symbolic link to the 'includes' directory when Archiving. Without this, Archive builds fail because the headers can't be found.\nln -s \"$OBJROOT/UninstalledProducts/include\" \"$BUILT_PRODUCTS_DIR/include\" > /dev/null 2>&1\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55995A781763FEB10017F41E /* Sources */ = {
