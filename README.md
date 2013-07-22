@@ -35,3 +35,11 @@ An NSTimer category allowing a block to be executed instead of a method.
     * Add EBFoundation as a dependency ("Target Dependencies" section)
     * Link against libEBFoundation.a ("Link Binary With Libraries" section)
 3. Add `#import <EBFoundation/EBFoundation.h>` to your source files.
+
+## Credits
+
+EBFoundation was created for [Lasso](http://las.so).
+
+## License
+
+EBFoundation is available under the MIT license; see the LICENSE file for more information.
