@@ -256,7 +256,7 @@ static void swizzleDeallocForObserveeClass(Class observeeClass)
                 .super_class = observeeSuperclass
             };
             
-            objc_msgSendSuper(&superInfo, @selector(dealloc));
+            ((void (*)(struct objc_super *, SEL))objc_msgSendSuper)(&superInfo, @selector(dealloc));
         } copy] autorelease];
     IMP deallocTrampolineImp = imp_implementationWithBlock(deallocTrampolineBlock);
     addMethodResult = class_addMethod(observeeClass, @selector(dealloc), deallocTrampolineImp, deallocTypeEncoding);
