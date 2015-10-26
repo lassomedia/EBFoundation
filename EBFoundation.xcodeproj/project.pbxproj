@@ -22,7 +22,35 @@
 		55995ABA1763FEDB0017F41E /* NSTimer+EBBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55995AA91763FEDB0017F41E /* NSTimer+EBBlockTimer.m */; };
 		55B87115176AAB4E00E22CF3 /* EBBlockValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 55B87112176AAB4E00E22CF3 /* EBBlockValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55B87117176AAB4E00E22CF3 /* EBBlockValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B87113176AAB4E00E22CF3 /* EBBlockValueTransformer.m */; };
+		63666DB81BD8C0A30049AD10 /* EBFoundation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55995AA11763FEDB0017F41E /* EBFoundation.h */; };
+		63666DB91BD8C0A30049AD10 /* EBAssert.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55995A9F1763FEDB0017F41E /* EBAssert.h */; };
+		63666DBA1BD8C0A30049AD10 /* EBBlockValueTransformer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55B87112176AAB4E00E22CF3 /* EBBlockValueTransformer.h */; };
+		63666DBB1BD8C0A30049AD10 /* EBObservation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 550F7950176A701A006C95BF /* EBObservation.h */; };
+		63666DBC1BD8C0A30049AD10 /* EBSingleton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55995AA21763FEDB0017F41E /* EBSingleton.h */; };
+		63666DBD1BD8C0A40049AD10 /* EBTime.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55995AA41763FEDB0017F41E /* EBTime.h */; };
+		63666DBE1BD8C0A40049AD10 /* EBUtilities.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55995AA61763FEDB0017F41E /* EBUtilities.h */; };
+		63666DBF1BD8C0A40049AD10 /* NSTimer+EBBlockTimer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55995AA81763FEDB0017F41E /* NSTimer+EBBlockTimer.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63666DB71BD8C07B0049AD10 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/EBFoundation;
+			dstSubfolderSpec = 16;
+			files = (
+				63666DB81BD8C0A30049AD10 /* EBFoundation.h in CopyFiles */,
+				63666DB91BD8C0A30049AD10 /* EBAssert.h in CopyFiles */,
+				63666DBA1BD8C0A30049AD10 /* EBBlockValueTransformer.h in CopyFiles */,
+				63666DBB1BD8C0A30049AD10 /* EBObservation.h in CopyFiles */,
+				63666DBC1BD8C0A30049AD10 /* EBSingleton.h in CopyFiles */,
+				63666DBD1BD8C0A40049AD10 /* EBTime.h in CopyFiles */,
+				63666DBE1BD8C0A40049AD10 /* EBUtilities.h in CopyFiles */,
+				63666DBF1BD8C0A40049AD10 /* NSTimer+EBBlockTimer.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		550F7950176A701A006C95BF /* EBObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBObservation.h; sourceTree = "<group>"; };
@@ -122,7 +150,7 @@
 				55995A8E1763FEB90017F41E /* Sources */,
 				55995A8F1763FEB90017F41E /* Frameworks */,
 				555E5DB7176402C1007FC19F /* Headers */,
-				55B61C26176E3D7500598DFC /* For Archive builds: create symbolic link to 'include' directory */,
+				63666DB71BD8C07B0049AD10 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -157,23 +185,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		55B61C26176E3D7500598DFC /* For Archive builds: create symbolic link to 'include' directory */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "For Archive builds: create symbolic link to 'include' directory";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This is necessary for Archive builds, since Xcode doesn't make a symbolic link to the 'includes' directory when Archiving. Without this, Archive builds fail because the headers can't be found.\ninclude_dir_path=\"$OBJROOT/UninstalledProducts/include\"\ninclude_symlink_path=\"$BUILT_PRODUCTS_DIR/include\"\n\nif [[ ! -e \"$include_symlink_path\" && -d \"$include_dir_path\" ]]; then\n    ln -s \"$include_dir_path\" \"$include_symlink_path\"\nfi\n\nexit 0";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55995A8E1763FEB90017F41E /* Sources */ = {
@@ -262,6 +273,7 @@
 		55995A9D1763FEB90017F41E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_BITCODE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -271,6 +283,7 @@
 		55995A9E1763FEB90017F41E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_BITCODE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,6 +329,7 @@
 		63D241A31924341A00FAE98E /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_BITCODE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
